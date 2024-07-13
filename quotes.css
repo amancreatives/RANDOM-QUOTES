@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif ;
+    box-sizing: border-box;
+}
+
+body {
+    background: #bbc6fa;
+}
+
+.mainBox {
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top :50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.mainBox h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.mainBox h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mainBox blockquote{
+    font-size: 32px;
+    min-height: 110px;
+
+}
+
+.mainBox blockquote::before, .mainBox blockquote::after{
+    content: '"';
+}
+
+.mainBox span {
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.mainBox span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+
+}
+
+.mainBox div {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainBox button {
+    font-size: 20px;
+    background: black;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.mainBox button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    
+    
+}
+
+.mainBox button i {
+    font-size: 20px;
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.mainBox button:nth-child(1){
+     background: rgb(23, 124, 229);
+     color: white;
+}
+
